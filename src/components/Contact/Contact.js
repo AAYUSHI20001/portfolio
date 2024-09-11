@@ -1,4 +1,4 @@
-import React from 'react';
+import React ,{useRef}from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import './Contact.css';
 import emailjs from '@emailjs/browser';
@@ -18,6 +18,8 @@ const Contact = () => {
           console.log('FAILED...', error.text);
         },
       );
+
+      
   };
   return (
   <div className='contact'>
