@@ -1,0 +1,132 @@
+.footer {
+    background-color: #120f1f;
+    color: #f4eeee;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  .footer-top-left p{
+    font-size: 20px;
+    max-width: 400px;
+  }
+  .footer-top-right{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+  }
+  
+  .footer-top-left,
+  .footer-top-right {
+    flex: 1;
+  }
+ 
+  
+  .footer-email-input {
+    display: flex;
+    gap: 30px;
+    padding : 20px 30px;
+    border-radius: 50px;
+    background: #cdbbf5;
+    padding-right: 80px;
+    margin-left: 600px;
+     
+    
+    
+  }
+  
+  
+  .footer-email-input input {
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #000000;
+    font-family: Outfit;
+    font-size: 18px;
+    font-style: bold;
+    
+ }
+  
+  .footer-subscribe {
+    padding: 20px 50px;
+    font-size: 20px;
+    background-color: linear-gradient(264deg, #987be2 -5.09%, #513789 1.06.28%);
+    color: rgb(242, 238, 238);
+    border-radius: 30px;
+   cursor: pointer;
+    transition: 0.3s;
+    
+  }
+  
+  .footer-subscribe:hover {
+    background-color: #6333a2;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center vertically */
+    padding: 10px 20px;
+    border-top: 1px solid #47277c;
+    font-size: 18px; /* Adjust font size */
+  }
+  
+  .footer-bottom-left {
+    flex: 1;
+    text-align: left;
+    font-size: 0.9em;
+    color: white;
+  }
+  
+  .footer-bottom-right {
+    display: flex;
+    margin-bottom: 0px;
+    gap: 46px;
+    font-size: -2.7em;
+    color: white;
+  }
+  
+  .footer-bottom-right p {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 10px;
+    
+  }
+  
+  .footer-links {
+    margin-top: 10px;
+  }
+  
+  .footer-links a {
+    color: #a5a5a5;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 0.5em; /* Adjust font size */
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #ffffff;
+  }
+  
+  /* Add space above the footer */
+  .spacer {
+    flex-grow: 1;
+  }
+  
+  /* Add spacing above the footer to separate it from the main content */
+  .footer-space {
+    margin-bottom: 50px;
+  }
+  
+  
+  

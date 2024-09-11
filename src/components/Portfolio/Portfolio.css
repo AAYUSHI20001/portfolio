@@ -1,0 +1,73 @@
+.portfolio-section {
+    padding: 50px;
+    background-color: #000000;
+    text-align: center;
+  }
+  
+  .portfolio-title {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    font-size: 80px;
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(84, 69, 118, 0.8);
+    -webkit-text-stroke: 2px #a064fa;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .portfolio-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .portfolio-item {
+    background-color: rgb(17, 16, 16);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    background: linear-gradient(270deg, #31273e 30%, #0a0011 100%);
+    box-shadow: 0 11px 18px #a67be5;
+    transition: transform 0.3s ease;
+    text-align: center;
+    
+  }
+  
+  .portfolio-item:hover {
+    transform: translateY(-10px);
+  }
+  
+  .portfolio-image {
+   width: 400px;
+  max-width: 270px;  /* Ensure it doesn't get larger than this */
+  height: 170px;  /* Maintain aspect ratio */
+  border-radius: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #9060f0;
+    box-shadow: 0 0 15px #a683eb;
+
+  }
+  
+  .portfolio-link {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 10px 20px;
+    background: linear-gradient(340deg, #09090a 60%, #956be7 90%);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    border: 1px solid #f0eff2;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .portfolio-link:hover {
+    background-color: #aa91ce;
+  }
+  

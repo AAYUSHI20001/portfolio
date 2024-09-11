@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    padding-top: 0px;
+    background-color: black;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left; 
+    justify-content: left;
+    height: 100vh; 
+    text-align: center; 
+} 
+  .home-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg,rgb(188, 163, 243));
+    color: #fff;
+    text-align: left;
+    padding-top: 299px;
+    margin-left: 0px;
+    margin-right:590px;
+  }
+
+  .main-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column; /* Adjust the value as needed */
+}
+
+.container {
+    max-width: 666px;
+   }
+  
+  h1 {
+    font-size: 4em;
+    margin: -4px -12px -12px;
+    background: linear-gradient(320deg, #221336 30%, #debafa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; 
+    color: transparent;
+    transform: scale(1.0);
+    transition: transform 0.5s ease, color 0.5s ease; 
+    -webkit-text-stroke: 1px #965cec; 
+    color: transparent;
+    line-height: 1.1;
+    text-align: left;
+
+  }
+ .purple-text{
+    
+    font-size:50px;
+    font-weight: bold;
+    font-family: Arial, sans-serif; 
+      
+    transition: color 0.3s ease, background-color 0.3s ease;  
+    text-align: left; 
+    -webkit-text-stroke: 2px #a064fa; 
+    background: linear-gradient(360deg, #050307 10%, #cfa6ee 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; 
+    color: transparent;
+    line-height: 1;
+
+  }
+  .button-container {
+    margin-top: 60px;
+    display: flex;
+    justify-content: left;
+    gap: 30px;
+   
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(14, 3, 3);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 105px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .connect-btn {
+    background-color: #ebe5ee;
+    background: linear-gradient(270deg, #54198f 30%, #cdb1e2 100%);
+  }
+  
+  .connect-btn:hover {
+    background-color: #7536c3;
+    
+  }
+  .resume-btn {
+    background-color: #180126;
+    color: #7536c3;
+    padding: 10px 40px;
+    border: 1px solid #7536c3; 
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 105px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+    
+  .resume-btn:hover {
+    animation: purpleShades 1s infinite; 
+    box-shadow: 0 0 10px 4px rgba(119, 83, 190, 0.7); 
+  }
+  
+  @keyframes purpleShades {
+    0% { border-color: #a225d8; }  
+    25% { border-color: #af49e1; } 
+    50% { border-color: #9d60d5; } 
+    75% { border-color: #590884; } 
+    100% { border-color: #3e0b4b; } 
+  }
+  
