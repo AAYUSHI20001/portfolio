@@ -70,4 +70,21 @@
   .portfolio-link:hover {
     background-color: #aa91ce;
   }
-  
+  @media (max-width: 1024px) {
+    .portfolio-title {
+      font-size: 60px;
+      margin-bottom: 60px;
+    }
+  }
+
+  @media (max-width: 768px) {
+  .portfolio-title {
+    font-size: 50px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .portfolio-title {
+    font-size: 40px;
+  }
+}

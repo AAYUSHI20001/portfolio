@@ -9,6 +9,8 @@ import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import './styles/App.css';
 
+
+
 function App() {
   return (
     <Router>

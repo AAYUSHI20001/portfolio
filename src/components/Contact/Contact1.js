@@ -1,37 +1,29 @@
 import React, { useRef } from "react";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import "./Contact.css";   
+import "./Contact.css";
 import emailjs from "@emailjs/browser";
-import { ToastContainer, toast } from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
-
 const Contact = () => {
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
-           
+
     emailjs
       .sendForm(
-        "service_91oax6r",
+        "service_6q4jvhi",
         "template_zibmuw9",
         form.current,
-        "ROAKxVJBvATZBXtmx"
+        "nAzakj6cM4lQx2B8wLa2p"
       )
       .then(
         () => {
           console.log("SUCCESS!");
-          toast.success("Email sent")
-          
         },
         (error) => {
-          toast.error("Try later")
-         
           console.log("FAILED...", error.text);
         }
       );
   };
   return (
-    <>
     <div className="contact">
       <div className="contact-title">
         <h1>Get in touch</h1>
@@ -46,20 +38,20 @@ const Contact = () => {
           </p>
           <div className="contact-details">
             <li className="contact-detail">
-              <i className="fas fa-envelope"></i>
+              <i className="fas fa-envelope fa-flip-horizontal"></i>
               <p>aayushinanagwal@gmail.com</p>
             </li>
             <li className="contact-detail">
-              <i className="fas fa-map-marker-alt"></i>
+              <i className="fas fa-map-marker-alt fa-flip-horizontal"></i>
               <p>Jaipur,Rajasthan</p>
             </li>
             <li className="contact-detail">
-              <i className="fas fa-phone"></i>
+            <i className="fas fa-phone fa-flip-horizontal"></i>
               <p>9352249469</p>
             </li>
           </div>
         </div>
-        <form className="contact-form" ref={form} onSubmit={sendEmail}>
+        <form className="contact-form">
           <label htmlFor="name">Your Name</label>
           <input type="text" placeholder="Enter your name" name="name" />
           <label htmlFor="email">Your Email</label>
@@ -76,10 +68,6 @@ const Contact = () => {
         </form>
       </div>
     </div>
-
-    <ToastContainer />
-</>
-
   );
 };
 

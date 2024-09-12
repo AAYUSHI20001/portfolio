@@ -6,7 +6,11 @@
   gap: 40px;
   margin: 80px 170px;
 }
-
+@media (max-width: 1024px) {
+  .contact {
+    margin: 60px 100px;
+  }
+}
 .contact-title {
   position: relative;
 }
@@ -17,14 +21,14 @@
   margin-bottom: 40px;
   text-shadow: 0 1px 2px rgba(84, 69, 118, 0.8);
   -webkit-text-stroke: 2px #a064fa;
-  color: transparent; /* Makes the text itself transparent so only the border is visible */
+  color: transparent; 
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease;
 }
 .contact-title h1:hover {
-  -webkit-text-stroke: 2px #aba2bd; /* Border color and thickness */
+  -webkit-text-stroke: 2px #aba2bd; 
 
   text-shadow: 0 2px 4px rgba(188, 163, 243);
 }
@@ -40,8 +44,8 @@
   font-size: 70px;
   font-weight: 600;
   text-shadow: 0 1px 2px rgba(188, 163, 243);
-  -webkit-text-stroke: 2px #aba2bd; /* Border color and thickness */
-  color: transparent; /* Makes the text itself transparent so only the border is visible */
+  -webkit-text-stroke: 2px #aba2bd; 
+  color: transparent; 
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -50,13 +54,13 @@
   transition: all 0.3s ease;
 }
 .contact-section h1:hover {
-  -webkit-text-stroke: 2px #a064fa; /* Change the border color on hover */
-  text-shadow: 0 2px 4px rgba(84, 69, 118, 0.8); /* Adjust the text shadow on hover */
+  -webkit-text-stroke: 2px #a064fa; 
+  text-shadow: 0 2px 4px rgba(84, 69, 118, 0.8); 
 }
 
 .contact-section p {
-  color: #eae8ed; /* Example color for paragraphs */
-  font-size: 21px; /* Example font size for paragraphs */
+  color: #eae8ed; 
+  font-size: 21px; 
   line-height: 1.6;
   font-family: Calibri, "Trebuchet MS", sans-serif;
   letter-spacing: 1px;
@@ -87,10 +91,10 @@
   margin-top: 25px;
 }
 .contact-detail i {
-  font-size: 24px; /* Size of the icons */
-  color: rgba(120, 90, 185, 0.8); /* Icon color */
-  margin-right: 10px; /* Space between the icon and the text */
-  transition: transform 0.3s, color 0.3s; /* Smooth transition for hover effect */
+  font-size: 27px; 
+  color: rgba(120, 90, 185, 0.8);
+  margin-right: 10px; 
+  transition: transform 0.3s, color 0.3s; 
 }
 
 .contact-detail p {
@@ -108,14 +112,14 @@
 }
 
 .contact-detail i:hover {
-  color: #b393e5; /* Change color on hover */
-  transform: scale(1.1); /* Slightly increase icon size on hover */
+  color: #b393e5; 
+  transform: scale(1.1); 
 }
 
-/* Adjustments for smaller screens */
 @media (max-width: 768px) {
-  .contact-detail i {
-    font-size: 20px;
+  .contact {
+    margin: 40px 20px;
+    gap: 20px;
   }
 
   .contact-detail p {
@@ -127,28 +131,6 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-}
-.contact-right label {
-  font-size: 23px;
-  font-weight: 600; /* Increase font weight for better emphasis */
-  color: #bc99f4; /* Keeping the existing color */
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; /* Add a modern, clean font family */
-  letter-spacing: 1px; /* Add spacing between letters */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Add a subtle text shadow for depth */
-  background: linear-gradient(
-    90deg,
-    #d1b3ff 0%,
-    #bc99f4 100%
-  ); /* Apply a gradient background */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; /* This makes the gradient apply only to the text */
-  transition: color 0.3s ease, text-shadow 0.3s ease; /* Add smooth transitions for hover effects */
-}
-
-.contact-right label:hover {
-  color: #7654aa; /* Change color on hover */
-  text-shadow: 2px 2px 4px rgba(205, 189, 248, 0.944); /* Enhance shadow effect on hover */
-  transform: scale(1.05); /* Slightly increase size on hover */
 }
 
 .contact-right input {
@@ -187,66 +169,81 @@
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.contact-submit {
-  border: none;
-  color: #f8f8f9;
-  border-radius: 50px;
-  background: linear-gradient(270deg, #20123a 50%, #ab8de6 100%);
-  font-size: 20px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  letter-spacing: 1px;
-  padding: 15px 40px;
-  cursor: pointer;
-  margin-top: 10px;
-  margin-left: 60px;
-  align-self: flex-start;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 40px;
-  border-radius: 20px;
+  border-radius: 55px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: #f7f7f7;
+  border: 0px solid rgba(120, 90, 185, 0.8);
+  border-top: 12px solid rgba(120, 90, 185, 0.8);
+  border-left: 1px solid rgba(120, 90, 185, 0.8);
+   background: linear-gradient(300deg, #14101a 40%, #0c0114 100%);
+    transition: transform 0.3s ease;
 }
 
 .contact-form label {
-  font-size: 18px;
+  font-size: 23px;
   font-weight: 600;
-  color: #333;
-  margin-bottom: 5px;
+  color: #9f7ec1;
+  margin-bottom: 9px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 1px;
+}
+.contact-form label:hover {
+  color: #c1a9e3;
+  transform: scale(1.05); 
+  transition: all 0.3s ease; 
 }
 
-.contact-form input, .contact-form textarea {
-  width: 100%;
-  padding: 15px;
+.contact-form input {
+   width: 100%;
+  padding: 30px;
   border: none;
   border-radius: 10px;
-  background-color: #fff;
-  font-size: 16px;
+  background-color: #dbc7ec;
+  font-size: 20px;
   font-family: Arial, sans-serif;
 }
 
-.contact-form input:focus, .contact-form textarea:focus {
-  outline: none;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+.contact-form textarea {
+  width: 100%;
+  padding: 39px;
+  border: none;
+  border-radius: 10px;
+  background-color: #dbc7ec;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+}
+/* Small Mobile View */
+@media (max-width: 480px) {
+  .contact-title h1 {
+    font-size: 40px;
+  }
 }
 
 .contact-submit {
-  background-color: #4CAF50;
-  color: #fff;
-  padding: 12px 30px;
+  position: relative;
+  z-index: 1;
   border: none;
-  border-radius: 10px;
+  border-radius: 40px;
   cursor: pointer;
-  font-size: 18px;
-  font-weight: 600;
-}
-
+  font-size: 20px;
+  font-weight: 500;
+  font-family:  "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+   color: #f8f8f9;
+   background: linear-gradient(270deg, #20123a 50%, #ab8de6 100%);
+  letter-spacing: 1px;
+   padding: 15px 40px;
+   margin-top: 10px;
+   margin-left: 60px;
+   align-self: flex-start;
+   transition: transform 0.3s, box-shadow 0.3s;
+ }
 .contact-submit:hover {
-  background-color: #3e8e41;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #6728a2; 
+  color: rgb(218, 209, 226); 
+  box-shadow: 3px 4px 15px rgb(206, 190, 223);
+  transform: scale(1.05);  
 }
