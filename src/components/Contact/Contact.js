@@ -9,10 +9,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_6q4jvhi",
-        "template_zibmuw9",
+        "service_6290nyr",
+        "template_qfkmvz9",
         form.current,
-        "nAzakj6cM4lQx2B8wLa2p"
+        "Ex1CZIrrVixNVqx-e"
       )
       .then(
         () => {
@@ -51,7 +51,7 @@ const Contact = () => {
             </li>
           </div>
         </div>
-        <form className="contact-form">
+        <form className="contact-form" ref={form} onSubmit={sendEmail}>
           <label htmlFor="name">Your Name</label>
           <input type="text" placeholder="Enter your name" name="name" />
           <label htmlFor="email">Your Email</label>
